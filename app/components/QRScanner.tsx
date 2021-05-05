@@ -19,7 +19,6 @@ export default function QRScanner() {
 
   const handleBarCodeScanned = ({ type, data }: BarCodeScannerResult) => {
     setScanned(true);
-    console.log(data);
     dispatch(addQR(data));
   };
 
